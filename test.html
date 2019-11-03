@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>아재퀴즈뜩! - 심심해 죽을것 같은자! 여기로 오거라! 아재개그퀴즈, 드립퀴즈부터 시계보기 기능까지!</title>
+    <meta charset="utf-8">
+</head>
+<script>
+
+var id = "100";
+
+var pwd = "admin";
+
+function loginCheck(){
+
+    var form = document.loginForm;
+
+    if(form.id.value == id){
+
+         form.action = "ii.html";
+         alert("짝짝짝!! 정답!");
+
+         form.submit();
+
+    }else{
+
+         alert("틀렸습니다!");
+
+
+    }
+
+}
+
+</script>
+
+ 
+
+<form name="loginForm" method="post">
+
+<table>
+10의 제곱은?
+    <tr>
+
+         <td>정답: <input type="text" size="10" name="id">
+
+
+
+               <input type="button" value=" 확 인 " onclick="loginCheck();">
+
+         </td>
+
+    <tr>
+
+<table>
+
+</form>
+<html/>
